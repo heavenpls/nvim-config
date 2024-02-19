@@ -9,7 +9,7 @@ require("lazy").setup({
         'williamboman/mason-lspconfig.nvim',
         config = function()
             require("mason-lspconfig").setup{
-                ensure_installed = { "lua_ls" },
+                ensure_installed = { "lua_ls","bashls","clangd","yamlls"},
                 automatic_installation = true
             }
         end,
