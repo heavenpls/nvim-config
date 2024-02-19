@@ -81,6 +81,15 @@ require("lazy").setup({
         init = function ()
             require("lualine").setup()
         end
+    },{
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.5',
+        dependencies = {
+            'nvim-lua/plenary.nvim'
+        },
+        keys = {
+            { "ff",":Telescope find_files<CR>",desc="TelescopeFindFile" }
+        }
     }
 })
 
