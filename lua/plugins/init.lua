@@ -90,6 +90,12 @@ require("lazy").setup({
         keys = {
             { "ff",":Telescope find_files<CR>",desc="TelescopeFindFile" }
         }
-    }
+    },{'romgrk/barbar.nvim',
+        dependencies = {
+          'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
+        },
+        init = function() vim.g.barbar_auto_setup = false end,
+        opts = {},
+  },
 })
 
